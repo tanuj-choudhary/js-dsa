@@ -5,3 +5,13 @@
 1. Count number of zeroes , ones and twos
 2. Empty the original array
 3. Add number of zeroes then ones and then twos to the array
+
+// Further optimised using only 1 pass
+1.  Initialise 3 iterables i=0, j= length of array-1, k=1
+2.  Run a loop from k to length of array -1
+3.      If current element is 0
+4.          swap value at array[k] and arary[i]
+5.          Increment i by 1          
+6.      if current element is 2
+7.          swap value at array[k] and array[j]
+8.          Decrease j by 1 
