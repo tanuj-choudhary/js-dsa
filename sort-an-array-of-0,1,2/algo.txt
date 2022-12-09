@@ -7,11 +7,17 @@
 3. Add number of zeroes then ones and then twos to the array
 
 // Further optimised using only 1 pass
-1.  Initialise 3 iterables i=0, j= length of array-1, k=1
-2.  Run a loop from k to length of array -1
-3.      If current element is 0
-4.          swap value at array[k] and arary[i]
-5.          Increment i by 1          
-6.      if current element is 2
-7.          swap value at array[k] and array[j]
-8.          Decrease j by 1 
+1.  Initialise 3 iterables low=0, high= length of array-1, mid=1
+
+2.  while mid <= high
+3.      If arr[mid] is 0
+4.          swap value at arr[mid] and arr[low]
+5.          Increase low by 1
+6.          Increase mid by 1      
+
+7.      if arr[mid] is 2
+8.          swap value at arr[mid] and arr[high]
+9.          Decrease high by 1
+
+10.     if arr[mid] is 1
+11.         Increase mid by 1 
