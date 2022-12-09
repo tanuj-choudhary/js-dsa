@@ -1,0 +1,23 @@
+// Bruteforce
+1. Sort using sort function or any sorting algorithm
+
+// Optimised
+1. Count number of zeroes , ones and twos
+2. Empty the original array
+3. Add number of zeroes then ones and then twos to the array
+
+// Further optimised using only 1 pass
+1.  Initialise 3 iterables low=0, high= length of array-1, mid=1
+
+2.  while mid <= high
+3.      If arr[mid] is 0
+4.          swap value at arr[mid] and arr[low]
+5.          Increase low by 1
+6.          Increase mid by 1      
+
+7.      if arr[mid] is 2
+8.          swap value at arr[mid] and arr[high]
+9.          Decrease high by 1
+
+10.     if arr[mid] is 1
+11.         Increase mid by 1 
