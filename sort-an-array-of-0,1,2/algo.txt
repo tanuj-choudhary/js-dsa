@@ -1,0 +1,7 @@
+// Bruteforce
+1. Sort using sort function or any sorting algorithm
+
+// Optimised
+1. Count number of zeroes , ones and twos
+2. Empty the original array
+3. Add number of zeroes then ones and then twos to the array
