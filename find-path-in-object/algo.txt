@@ -1,0 +1,11 @@
+Split the string with dot as seperator into array of keys
+Create a flag keyExist nad set it to true
+Traverse the keys:
+    If (obj exists and obj[key] doesn't equal to undefined)
+        Set obj to obj[key]
+    else
+        Set keyExist to false and break
+if(keyExists):
+    Return newObj          
+else:
+    Return undefined
