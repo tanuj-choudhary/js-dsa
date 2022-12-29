@@ -1,0 +1,17 @@
+// Bruteforce
+
+If array length is less than 2 return null
+Run a loop for every element check if its exists after its index or not
+    If exist Return elem
+Return null
+
+// Optimal
+
+1.  If array length is less than 2 return null
+2.  Create an empty set
+3.  Traverse all the elements
+4.      If current element exists in set:
+5.          return current element;
+6.      else
+7.          Insert current element in set
+8.  Return null
