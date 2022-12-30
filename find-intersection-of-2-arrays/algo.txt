@@ -1,0 +1,8 @@
+If any of the array is empty return empty list
+Create a output set
+Run a loop till first arrays length:
+    Run a loop till second arrays length:
+        If (firstArray[i] === secondArray[j]) and output not contains firstArray[i]:
+            Insert in output object obj[firstArray[i]] = 1
+
+Convert output set to array and return
