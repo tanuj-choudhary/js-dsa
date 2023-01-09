@@ -1,7 +1,8 @@
-const array = [12, 3, 4, 1, 6, 9];
-const K = 24;
+function getTripletsBruteforce(array, K) {
+  if (array.length < 3) {
+    return [];
+  }
 
-function getTriplets(array, K) {
   for (let i = 0; i < array.length; i++) {
     const element1 = array[i];
 
@@ -17,6 +18,32 @@ function getTriplets(array, K) {
       }
     }
   }
+  return [];
 }
 
-console.log(getTriplets(array, K));
+function getTripletsOptimal(array, sum) {
+  if (array.length < 3) {
+    return [];
+  }
+
+  for (let i = 0; i < array.length; i++) {
+    const set = new Set();
+    const element1 = array[i];
+
+    for (let j = i + 1; j < array.length; j++) {
+      const element2 = array[j];
+      const element3 = sum - element2 - element1;
+
+      if (set.has(element3)) {
+        return [element1, element3, element2];
+      } else {
+        set.add(element2);
+      }
+    }
+  }
+  return [];
+}
+
+console.log(getTripletsBruteforce([12, 3, 4, 1, 6, 9], 24));
+console.log(getTripletsOptimal([12, 3, 4, 1, 6, 9], 24));
+console.log(getTripletsOptimal([3, 1], 7));
