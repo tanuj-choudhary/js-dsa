@@ -1,0 +1,11 @@
+1.  If array length less than 2 return 'Send a valid input'
+2.  Create 2 variables largest , secondLargest and initialise them to null
+3.  Run a loop till array length:
+4       If largest == null:
+5.          largest = currElem
+6.      else If currElem > largest:
+7.          secondLargest = largest
+8.          largest = currElem
+9.      else if secondLargest > currElem:
+10.         secondLargest = currElem
+11. Return secondLargest
