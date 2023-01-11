@@ -1,0 +1,15 @@
+Naive approach
+1. Convert string in lowercase
+2. Sort using any O(nlogn) algorithm like merge Sort or quick Sort
+
+Time complexity - O(nlogn)
+Space complexity - O(1)
+
+Optimal approach
+1. Convert string in lowercase
+2.  Store the frequency of all characters in object
+3.  Create a output string
+4.  Traverse the object and insert characters according to their frequency (object stores keys in alphabetical order)
+
+Time complexity - O(n)
+Space complexity - O(1) (As number of characters are fixed for any size of input that is 26)
