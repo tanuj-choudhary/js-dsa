@@ -1,0 +1,7 @@
+Flatten a 2d array:
+
+If array is empty return array;
+Traverse array till end:
+    If current element is an array:
+        Store current element in a temp variable
+        Using splice remove current element and spread the temp variable array
